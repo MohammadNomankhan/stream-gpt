@@ -3,15 +3,16 @@
 @tailwind utilities;
 
 @layer utilities {
-  .hero-bg {
+  .bg-hero {
     background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
+        to top,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.7)
       ),
       url("https://i.ibb.co/RjdqDMp/stream-gpt-bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     min-height: 100vh;
   }
 }
