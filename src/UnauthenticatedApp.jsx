@@ -96,7 +96,7 @@ const UnauthenticatedApp = () => {
 
   return (
     <div
-      className="flex flex-col items-center min-h-screen bg-hero text-gray-50"
+      className="flex flex-col items-center min-h-screen bg-hero text-gray-50 font-manrope"
       role="main"
     >
       <div className="w-full px-6 py-8 flex justify-between" aria-label="Logo">
