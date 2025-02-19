@@ -1,12 +1,9 @@
-import { AudioLines } from "lucide-react";
-
 const BingeLogo = () => {
     return (
-        <h1 className="flex items-center gap-1 font-exo2 text-xl">
-            <AudioLines size={28}  />
-            <span className="font-bold tracking-wider">Binge</span>
+        <h1 className="font-exo2 uppercase text-2xl font-bold tracking-wider text-rose-400">
+            Binge
         </h1>
     );
-}
+};
 
 export default BingeLogo;

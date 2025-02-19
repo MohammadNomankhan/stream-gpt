@@ -17,7 +17,7 @@ import LoginForm from "./LoginForm"
 import RegisterForm from "./RegisterForm"
 import Search from "./Search"
 
-const Header = () => {
+const Header = ({onSearch}) => {
     const [open, setOpen] = React.useState(false)
     const isDesktop = useMediaQuery("(min-width: 640px)")
     const [formType, setFormType] = React.useState("login");
@@ -31,7 +31,7 @@ const Header = () => {
                 <Drawer open={open} onOpenChange={setOpen} direction={isDesktop ? "right" : "bottom"}>
                     <DrawerTrigger asChild>
                         <Button variant="ghost">
-                            <CircleUser className="w-6 h-6" />
+                            <CircleUser className="w-6 h-6 text-gray-300" />
                         </Button>
                     </DrawerTrigger>
                     <DrawerContent className={clsx("bg-gray-900 text-white p-6", isDesktop ? "h-screen rounded-l-lg right-0 max-w-[425px]" : "h-[85vh] w-full rounded-t-lg")}>
@@ -56,7 +56,7 @@ const Header = () => {
                     </DrawerContent>
                 </Drawer>
             </div>
-            <Search />
+            <Search onSearch={onSearch} />
         </header>
     )
 }
